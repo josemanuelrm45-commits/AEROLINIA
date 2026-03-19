@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFly - Aerolínea Profesional</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="overlay">
+            <h1>AEROLINEA MEXICANA ✈️</h1>
+            <p>Vuela al destino de tus sueños</p>
+            <button onclick="scrollToReservas()">Reservar ahora</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#reservas">Reservar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="container" id="reservas">
+        <div class="card">
+            <h2>Reservar Vuelo</h2>
+
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+
+            <select id="origen" required>
+                <option value="" disabled selected>Selecciona origen</option>
+                <option value="México">México</option>
+                <option value="USA">Estados Unidos</option>
+                <option value="España">España</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+
+            <select id="destino" required>
+                <option value="" disabled selected>Selecciona destino</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Francia">Francia</option>
+                <option value="Japón">Japón</option>
+                <option value="Italia">Italia</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+
+            <input type="date" id="fecha" required>
+
+            <select id="clase" required>
+                <option value="" disabled selected>Selecciona clase</option>
+                <option value="economica">Económica</option>
+                <option value="ejecutiva">Ejecutiva</option>
+            </select>
+
+            <button onclick="reservar()">Confirmar Reserva</button>
+
+            <div id="resultado"></div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="box">✈️ Vuelos seguros y puntuales</div>
+        <div class="box">🌎 Destinos internacionales</div>
+        <div class="box">💺 Comodidad garantizada</div>
+        <div class="box">🎧 Entretenimiento a bordo</div>
+    </section>
+
+    <section class="container" id="contacto">
+        <div class="card">
+            <h2>Contacto</h2>
+            <p>📧 Email: contacto@aeroliniamexicana.com</p>
+            <p>📞 Tel: 442-123-4567</p>
+            <p>📍 Dirección: Av. Central 123, Ciudad de México</p>
+            <p>⏰ Horario: Lun-Vie 9:00 - 18:00</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 SkyFly - Todos los derechos reservados</p>
+        <p style="font-size: 12px; margin-top: 10px;">Tu mejor opción para viajar por el mundo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
